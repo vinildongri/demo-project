@@ -1,0 +1,149 @@
+/* --- Header.css --- */
+
+/* Base Variables for the Theme */
+:root {
+    --primary-gold: #d4af37;
+    /* Adjust to match your exact gold */
+    --nav-bg: rgba(15, 15, 15, 0.95);
+    --text-light: #ffffff;
+}
+
+/* 1. Main Header Wrapper */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+    z-index: 1000;
+    /* Transparent initially so the Hero image shows through */
+    background-color: transparent;
+}
+
+/* The 'scrolled' state triggered by your React state */
+#navbar.scrolled {
+    background-color: var(--nav-bg);
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Container Layout */
+.container.nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 3. Logo Styling */
+.nav-logo {
+    font-family: "Times New Roman", serif;
+    /* Replace with your specific serif font */
+    font-size: 2rem;
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.nav-logo span {
+    font-family: "Arial", sans-serif;
+    font-size: 0.75rem;
+    color: var(--primary-gold);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* 4. Desktop Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-gold);
+}
+
+/* 5. Enquire Now Button */
+.btn.btn-outline.nav-cta {
+    border: 1px solid var(--primary-gold);
+    padding: 0.6rem 1.5rem;
+    border-radius: 2px;
+    color: var(--primary-gold);
+    transition: all 0.3s ease;
+}
+
+.btn.btn-outline.nav-cta:hover {
+    background-color: var(--primary-gold);
+    color: #000;
+}
+
+/* 6. Hamburger Menu (Hidden on Desktop) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+/* 7. Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--nav-bg);
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 2rem;
+        /* Hidden state */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    /* The 'open' state triggered by your React state */
+    .nav-links.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

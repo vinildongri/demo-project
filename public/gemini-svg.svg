@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="varaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4e6b0" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#C59B4D" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="512" rx="100" fill="#111111" />
+  
+  <path d="M150 140 L236 380 L276 380 L362 140 L312 140 L256 310 L200 140 Z" fill="url(#varaGold)" />
+  
+  <rect x="135" y="130" width="80" height="12" fill="url(#varaGold)" />
+  <rect x="297" y="130" width="80" height="12" fill="url(#varaGold)" />
+</svg>

@@ -1,0 +1,126 @@
+/* --- Hero.css --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --gold-light: #d4af37;
+    --white: #ffffff;
+}
+
+#hero {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Contains the zoom animation */
+}
+
+.hero-bg {
+    position: absolute;
+    inset: -5%;
+    /* Prevents edges showing during zoom */
+    /* PREMIUM IMAGE PLACEHOLDER - Replace URL with your own picture */
+    background: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    animation: kenBurns 25s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurns {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* Rich gradient overlay for perfect text readability */
+    background: linear-gradient(to bottom,
+            rgba(8, 8, 8, 0.6) 0%,
+            rgba(8, 8, 8, 0.3) 50%,
+            rgba(8, 8, 8, 0.8) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 2rem;
+    margin-top: 5rem;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
+}
+
+.hero-title em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: "Arial", sans-serif;
+}
+
+/* Gold filled button */
+.btn-primary {
+    background-color: var(--gold-light);
+    color: #000;
+    border: 1px solid var(--gold-light);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--gold-light);
+}
+
+/* White outline button */
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    color: #000;
+}

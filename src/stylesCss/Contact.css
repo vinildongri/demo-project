@@ -1,0 +1,510 @@
+/* --- Contact.css (Ultra-Premium Standard CSS) --- */
+
+:root {
+    --gold: #D4AF37;
+    --gold-light: #f4e6b0;
+    --gold-dark: #C59B4D;
+    --black: #111111;
+    --white: #ffffff;
+    --off-white: #FCFAF8;
+    --gray-text: #666666;
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Inter', sans-serif;
+}
+
+.luxury-contact {
+    position: relative;
+    width: 100%;
+    padding: 8rem 0;
+    background-color: var(--off-white);
+    font-family: var(--sans);
+    overflow: hidden;
+    scroll-margin-top: 80px;
+}
+
+/* --- Ambient Background Effects --- */
+.ambient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+}
+
+.glow-circle.top-right {
+    top: -20%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: rgba(212, 175, 55, 0.08);
+}
+
+.glow-circle.bottom-left {
+    top: 40%;
+    left: -10%;
+    width: 40vw;
+    height: 40vw;
+    background: rgba(244, 230, 176, 0.15);
+}
+
+.corner-ornament {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.corner-ornament.top-left {
+    top: 2rem;
+    left: 2rem;
+    border-top: 2px solid rgba(212, 175, 55, 0.3);
+    border-left: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.corner-ornament.bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    border-right: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+/* --- Layout Grid --- */
+.contact-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+/* --- Left Column: Text & Content --- */
+.luxury-eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-title {
+    font-family: var(--serif);
+    font-size: 4rem;
+    color: var(--black);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-title em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gold);
+}
+
+.gold-divider {
+    width: 80px;
+    height: 2px;
+    background-color: var(--gold);
+    margin-bottom: 2rem;
+}
+
+.luxury-desc {
+    color: var(--gray-text);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 450px;
+    margin-bottom: 2.5rem;
+}
+
+/* Trust Indicators */
+.trust-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #444;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.trust-icon {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+/* Contact Details Grid */
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 2.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.detail-icon {
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+}
+
+.detail-item h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.detail-item p {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Add/Update this in your Contact.css */
+.detail-item a {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: inherit;
+    /* Keeps the color consistent */
+    text-decoration: none;
+}
+
+/* Gold hover effect for contact blocks */
+.footer-contact-link:hover .detail-icon,
+.footer-contact-link:hover h4,
+.footer-contact-link:hover p {
+    color: var(--gold);
+}
+
+/* --- Right Column: Glassmorphism Card --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.luxury-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Optimized Form Row Logic to automatically stretch single items */
+.luxury-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Force rows with only one child (Email, Textarea) to be full width */
+.luxury-form .form-row:has(input:only-child),
+.luxury-form .form-row:has(textarea:only-child) {
+    grid-template-columns: 1fr;
+}
+
+.card-header {
+    margin-bottom: 2rem;
+}
+
+.form-title {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    color: var(--black);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    color: var(--gray-text);
+    font-size: 0.95rem;
+}
+
+.glass-input {
+    width: 100%;
+    height: 60px;
+    /* Luxurious, tall inputs */
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 0 1.2rem;
+    font-family: var(--sans);
+    font-size: 1rem;
+    color: var(--black);
+    outline: none;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s ease;
+}
+
+.glass-input::placeholder {
+    color: #aaa;
+}
+
+.glass-input:focus {
+    border-bottom-color: var(--gold);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+textarea.glass-input {
+    height: auto;
+    padding-top: 1.2rem;
+    min-height: 120px;
+    resize: none;
+}
+
+/* Premium Gold Button */
+.gold-gradient-btn {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-dark));
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gold-gradient-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(212, 175, 55, 0.4);
+}
+
+.gold-gradient-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-glare {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    z-index: 1;
+}
+
+.gold-gradient-btn:hover .btn-glare {
+    animation: shine 1.2s ease forwards;
+}
+
+@keyframes shine {
+    100% {
+        left: 200%;
+    }
+}
+
+/* Trust Badges Below Form */
+.form-trust-badges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1.5rem;
+}
+
+.form-trust-badges span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--gray-text);
+    font-weight: 500;
+}
+
+.trust-icon-sm {
+    color: var(--gold);
+}
+
+/* Success State */
+.success-state {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.success-icon-wrap {
+    width: 80px;
+    height: 80px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.success-icon-wrap svg {
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+.success-state h3 {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    color: var(--black);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.success-state p {
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+/* --- Floating WhatsApp --- */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    z-index: 100;
+    transition: transform 0.3s;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.floating-whatsapp:hover .whatsapp-tooltip {
+    opacity: 1;
+}
+
+/* --- Mobile Responsiveness --- */
+@media screen and (max-width: 1000px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .premium-glass-card {
+        padding: 2.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .form-trust-badges {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+}
+
+.error-text {
+    display: block;
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* --- Floating WhatsApp Pill Button --- */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: white;
+    /* Force horizontal shape */
+    width: auto !important;
+    height: auto !important;
+    padding: 0.8rem 1.8rem !important;
+    border-radius: 50px;
+    /* Force items to sit side-by-side */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* Prevent text from stacking */
+    white-space: nowrap !important;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    z-index: 100;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+}
+
+.wa-icon {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.wa-text {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
