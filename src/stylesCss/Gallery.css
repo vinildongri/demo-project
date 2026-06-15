@@ -370,3 +370,18 @@
         font-size: 2.5rem;
     }
 }
+
+/* --- Fix for Small Mobile Screens --- */
+@media screen and (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+        /* Forces the grid into a single column on phones */
+        gap: 1.5rem;
+        /* Slightly reduces the gap for mobile screens */
+    }
+
+    .category-card {
+        height: 320px;
+        /* Adjusts the height so full-width cards don't take up the entire screen */
+    }
+}
