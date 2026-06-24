@@ -60,21 +60,21 @@ const Footer = () => {
                     {/* SECTION 1: Brand Area & SECTION 5: Social Media */}
                     <motion.div variants={fadeInUp} className="footer-col brand-col">
                         <div className="brand-header">
-                            <h2 className="footer-logo">VARA</h2>
+                            <h2 className="footer-logo">Vikram</h2>
                             <span className="footer-logo-sub">Convention Hall</span>
                         </div>
                         <p className="footer-tagline">"Creating Memorable Celebrations"</p>
                         <p className="footer-desc">
-                            Experience the pinnacle of luxury hosting. VARA combines breathtaking architecture with impeccable 5-star service for your most treasured moments.
+                            Experience the pinnacle of luxury hosting. Vikram combines breathtaking architecture with impeccable 5-star service for your most treasured moments.
                         </p>
 
                         {/* Social Icons */}
                         <div className="social-icons">
                             {[
-                                { icon: <FaInstagram />, href: "https://www.instagram.com/varaconvention?igsh=Y3FoZXlocGMwZXAx" },
+                                { icon: <FaInstagram />, href: "https://www.instagram.com/Vikramconvention?igsh=Y3FoZXlocGMwZXAx" },
                                 { icon: <FaFacebookF />, href: "/" },
                                 { icon: <FaYoutube />, href: "/" },
-                                { icon: <FaMapMarkerAlt />, href: "https://www.google.com/maps/place/VARA+CONVENTION+hall/@17.2175119,78.6117838,13.55z/data=!4m6!3m5!1s0x3bcba7a0e3741ab1:0xbd50a8d117cc788b!8m2!3d17.2396003!4d78.6122902!16s%2Fg%2F11mdv54vnq?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" }
+                                { icon: <FaMapMarkerAlt />, href: "https://www.google.com/maps/place/Vikram+Convention+Hall+%7C+Centralised+A%2Fc+Mangalpally/@17.2181339,78.6027668,15z/data=!4m10!1m2!2m1!1sVikram+Convention+Hall!3m6!1s0x3bcba79b11eca637:0x425c3a8c5ea08ab6!8m2!3d17.2180376!4d78.6028409!15sChZWaWtyYW0gQ29udmVudGlvbiBIYWxsWhgiFnZpa3JhbSBjb252ZW50aW9uIGhhbGySAQxiYW5xdWV0X2hhbGzgAQA!16s%2Fg%2F11ng18n735?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D" }
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
@@ -167,28 +167,28 @@ const Footer = () => {
                         <ul className="footer-contact-list">
                             <li className="footer-contact-link">
                                 <a
-                                    href="https://www.google.com/maps/place/VARA+CONVENTION+hall/@17.2175119,78.6117838,13.55z/data=!4m6!3m5!1s0x3bcba7a0e3741ab1:0xbd50a8d117cc788b!8m2!3d17.2396003!4d78.6122902!16s%2Fg%2F11mdv54vnq?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
+                                    href="https://www.google.com/maps/place/Vikram+Convention+Hall+%7C+Centralised+A%2Fc+Mangalpally/@17.2181339,78.6027668,15z/data=!4m10!1m2!2m1!1sVikram+Convention+Hall!3m6!1s0x3bcba79b11eca637:0x425c3a8c5ea08ab6!8m2!3d17.2180376!4d78.6028409!15sChZWaWtyYW0gQ29udmVudGlvbiBIYWxsWhgiFnZpa3JhbSBjb252ZW50aW9uIGhhbGySAQxiYW5xdWV0X2hhbGzgAQA!16s%2Fg%2F11ng18n735?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <FaMapMarkerAlt className="contact-icon" />
-                                    <span>Koheda Rd, Ramdas Pally<br />Telangana 501510</span>
+                                    <span>Koheda X Road, Mangalpalle, Bongloor<br />Telangana 501510</span>
                                 </a>
                             </li>
                             <li>
                                 <FaPhoneAlt className="contact-icon" />
-                                <span>+91 7386638777</span>
+                                <span>+91 7901091234</span>
                             </li>
                             <li className='footer-contact-link'>
                                 <a href="https://wa.me/9393882113" target="_blank" rel="noreferrer">
                                     <FaWhatsapp className="contact-icon whatsapp-icon" />
-                                    <span>+91 93938 82113</span>
+                                    <span>+91 7901091234</span>
                                 </a>
                             </li>
                             <li className='footer-contact-link'>
-                                <a href="mailto:vara@gmail.com">
+                                <a href="mailto:Vikram@gmail.com">
                                     <FaEnvelope className="contact-icon" />
-                                    <span>vara@gmail.com</span>
+                                    <span>Vikram@gmail.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -198,7 +198,7 @@ const Footer = () => {
 
                 {/* BOTTOM BAR */}
                 <motion.div variants={fadeInUp} className="footer-bottom">
-                    <p>© 2026 VARA Convention Hall. All Rights Reserved.</p>
+                    <p>© 2026 Vikram Convention Hall. All Rights Reserved.</p>
 
                     <p className="designer-credit">
                         Designed by <span>Vinil</span>

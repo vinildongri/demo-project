@@ -149,34 +149,34 @@ const Contact = () => {
 
                         {/* Location Link */}
                         <div className="detail-item footer-contact-link ">
-                            <a href="https://www.google.com/maps/place/VARA+CONVENTION+hall/@17.2175119,78.6117838,13.55z/data=!4m6!3m5!1s0x3bcba7a0e3741ab1:0xbd50a8d117cc788b!8m2!3d17.2396003!4d78.6122902!16s%2Fg%2F11mdv54vnq?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
+                            <a href="https://www.google.com/maps/place/Vikram+CONVENTION+hall/@17.2175119,78.6117838,13.55z/data=!4m6!3m5!1s0x3bcba7a0e3741ab1:0xbd50a8d117cc788b!8m2!3d17.2396003!4d78.6122902!16s%2Fg%2F11mdv54vnq?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
                                 target="_blank" rel="noopener noreferrer">
                                 <FaMapMarkerAlt className="detail-icon" />
                                 <div className=' footer-contact-link'>
                                     <h4>Location</h4>
-                                    <p>Koheda Rd, Ramdas Pally<br />Telangana 501510</p>
+                                    <p>Koheda X Road, Mangalpalle, Bongloor<br />Telangana 501510</p>
                                 </div>
                             </a>
                         </div>
 
                         {/* Phone Link (tel:) */}
                         <div className="detail-item footer-contact-link">
-                            <a href="tel:+917386638777">
+                            <a href="tel:+917901091234">
                                 <FaPhoneAlt className="detail-icon" />
                                 <div>
                                     <h4>Direct Line</h4>
-                                    <p>+91 73866 38777</p>
+                                    <p>+91  7901091234</p>
                                 </div>
                             </a>
                         </div>
 
                         {/* Email Link (mailto:) */}
                         <div className="detail-item footer-contact-link">
-                            <a href="mailto:vara@gmail.com">
+                            <a href="mailto:Vikram@gmail.com">
                                 <FaEnvelope className="detail-icon" />
                                 <div>
                                     <h4>Email</h4>
-                                    <p>vara@gmail.com</p>
+                                    <p>Vikram@gmail.com</p>
                                 </div>
                             </a>
                         </div>
@@ -206,7 +206,7 @@ const Contact = () => {
                                         <FaCheckCircle />
                                     </div>
                                     <h3>Request Received</h3>
-                                    <p>Thank you for considering VARA. Our event director will be in touch with you shortly.</p>
+                                    <p>Thank you for considering Vikram. Our event director will be in touch with you shortly.</p>
                                 </motion.div>
                             ) : (
                                 <motion.form
@@ -297,7 +297,7 @@ const Contact = () => {
             </div>
 
             {/* --- Floating WhatsApp Button --- */}
-            <a href="https://wa.me/9393882113" target="_blank" rel="noreferrer" className="floating-whatsapp">
+            <a href="https://wa.me/7901091234" target="_blank" rel="noreferrer" className="floating-whatsapp">
                 <FaWhatsapp className="wa-icon" />
                 <span className="wa-text">BOOK NOW</span>
             </a>

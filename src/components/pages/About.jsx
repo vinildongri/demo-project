@@ -7,7 +7,7 @@ const About = () => {
             <div className="container about-grid">
                 <div className="about-img-wrap fade-up">
                     {/* React automatically looks inside the public folder for absolute paths */}
-                    <img src="/varaPics/entry.png" alt="VARA Convention Exterior" className="about-img" />
+                    <img src="/vikramPics/image.png" alt="VARA Convention Exterior" className="about-img" />
 
                     <div className="about-badge">
                         <span className="about-badge-num">15+</span>

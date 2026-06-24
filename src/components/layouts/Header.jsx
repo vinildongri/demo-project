@@ -72,8 +72,8 @@ const Header = () => {
     return (
         <header id="navbar" className={(isScrolled || !isHomePage) ? 'scrolled' : ''}>
             <div className="container nav-inner">
-                <a href="/" className="nav-logo" aria-label="VARA Convention Hall Home">
-                    VARA<span>Convention Hall</span>
+                <a href="/" className="nav-logo" aria-label="Vikram Convention Hall Home">
+                    Vikram<span>Convention Hall</span>
                 </a>
 
                 <nav aria-label="Primary Navigation">

@@ -7,9 +7,9 @@ export const categoryData = [
         cover: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
         desc: 'Experience the magic of VARA weddings. From grand mandaps adorned with exotic florals to elegant aisles, we provide a breathtaking canvas for your sacred vows and joyous celebrations.',
         images: [
-            '/varaPics/wedding/wedding1.png',
-            '/varaPics/wedding/wedding2.png',
-            '/varaPics/wedding/wedding3.png',
+            '/vikramPics/wedding/image1.png',
+            '/vikramPics/wedding/image2.png',
+            '/vikramPics/wedding/image3.png',
             'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80',
             'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80',
             'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80'
@@ -32,12 +32,15 @@ export const categoryData = [
         cover: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80',
         desc: 'First impressions matter. The grand facade of VARA Convention Hall is illuminated brilliantly at night, offering a red-carpet-worthy arrival experience complete with landscaped pathways.',
         images: [
-            '/varaPics/exterior/building.png',
-            '/varaPics/exterior/chairs.png',
-            '/varaPics/exterior/tree.png',
-            '/varaPics/exterior/nightParty.png',
-            '/varaPics/exterior/krishna.png',
-            '/varaPics/exterior/gate.png',
+            // '/varaPics/exterior/building.png',
+            // '/varaPics/exterior/chairs.png',
+            // '/varaPics/exterior/tree.png',
+            // '/varaPics/exterior/nightParty.png',
+            // '/varaPics/exterior/krishna.png',
+            // '/varaPics/exterior/gate.png',
+
+            '/vikramPics/wedding/image2.png',
+            '/vikramPics/wedding/image3.png',
             'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80'
         ]
     },
@@ -80,8 +83,8 @@ export const categoryData = [
         cover: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80',
         desc: 'Seamless logistics are the backbone of a successful event. Enjoy peace of mind with our expansive, secure parking facility accommodating over 400 vehicles, complete with professional valet services.',
         images: [
-            '/varaPics/parkking/parking1.png',
-            '/varaPics/parkking/parking2.png',
+            // '/varaPics/parkking/parking1.png',
+            // '/varaPics/parkking/parking2.png',
             'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80',
             'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
             'https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=800&q=80'
